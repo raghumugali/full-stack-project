@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-ui
+  namespace: newnamespace
+spec:
+  slelctor:
+    app: react-ui
+
+  type: NodePort
+  ports:
+    - name: react-ui
+      port: 8080
+      targetPort: 8080
+      
